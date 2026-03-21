@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Page fade-in */
+        body {
+            animation: fadeInPage 1s ease-in;
+        }
+
+        @keyframes fadeInPage {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Stagger animation for cards */
+        .project {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        .project:nth-child(1) { animation-delay: 0.2s; }
+        .project:nth-child(2) { animation-delay: 0.4s; }
+        .project:nth-child(3) { animation-delay: 0.6s; }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Button hover animation */
+        .project a:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>Projects</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+</nav>
+
+<!-- Projects Section -->
+<section>
+    <h1>My Projects</h1>
+
+    <div class="project-container">
+
+        <!-- Task Manager -->
+        <div class="project">
+            <img src="images/taskmanager.webp" alt="Task Manager">
+            <h3>Student Task Manager</h3>
+            <p>
+                A full-featured task manager designed for students to organize
+                assignments, set deadlines, and improve productivity.
+            </p>
+            <a href="https://github.com/avinashmenon-151art
+            " target="_blank">View Code</a>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="project">
+            <img src="images/example.png" alt="Portfolio">
+            <h3>Portfolio Website</h3>
+            <p>
+                A responsive personal portfolio website showcasing projects,
+                skills, and contact details using HTML and CSS.
+            </p>
+            <a href="https://github.com/avinashmenon-151art
+            " target="_blank">View Code</a>
+        </div>
+
+        <!-- Calculator -->
+        <div class="project">
+            <img src="images/calc.png" alt="Calculator">
+            <h3>Calculator</h3>
+            <p>
+                A simple calculator application that performs basic arithmetic
+                operations with a clean interface.
+            </p>
+            <a href="https://github.com/avinashmenon-151art
+            " target="_blank">View Code</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>
+        <a href="index.html">Back to Home</a>
+    </p>
+</footer>
+
+</body>
+</html>
