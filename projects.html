@@ -3,106 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>Projects | Avinash Menon</title>
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        /* Page fade-in */
-        body {
-            animation: fadeInPage 1s ease-in;
-        }
-
-        @keyframes fadeInPage {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* Stagger animation for cards */
-        .project {
-            opacity: 0;
-            transform: translateY(30px);
-            animation: slideUp 0.8s ease forwards;
-        }
-
-        .project:nth-child(1) { animation-delay: 0.2s; }
-        .project:nth-child(2) { animation-delay: 0.4s; }
-        .project:nth-child(3) { animation-delay: 0.6s; }
-
-        @keyframes slideUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Button hover animation */
-        .project a:hover {
-            transform: scale(1.1);
-        }
-    </style>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav>
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-    </ul>
-</nav>
+    <nav>
+        <div class="logo"><a href="index.html">AM<span class="accent">.</span></a></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- Projects Section -->
-<section>
-    <h1>My Projects</h1>
+    <section class="page-header">
+        <div class="section-label">// Portfolio</div>
+        <h1>My <span class="accent">Work</span></h1>
+        <p>A collection of projects built while learning and exploring web development.</p>
+    </section>
 
-    <div class="project-container">
+    <section class="projects">
+        <div class="project-grid">
 
-        <!-- Task Manager -->
-        <div class="project">
-            <img src="images/taskmanager.webp" alt="Task Manager">
-            <h3>Student Task Manager</h3>
-            <p>
-                A full-featured task manager designed for students to organize
-                assignments, set deadlines, and improve productivity.
-            </p>
-            <a href="https://github.com/avinashmenon-151art
-            " target="_blank">View Code</a>
+            <article class="card">
+                <div class="card-img">
+                    <img src="images/taskmanager.webp" alt="Student Task Manager" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="https://github.com/avinashmenon151-art" target="_blank" rel="noopener" class="overlay-btn">View on GitHub ↗</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <span class="num">01</span>
+                    <h3>Student Task Manager</h3>
+                    <p>An app to help students organise daily tasks and academic deadlines efficiently.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <a href="https://github.com/avinashmenon151-art" target="_blank" rel="noopener" class="card-link">GitHub →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img">
+                    <img src="images/example.png" alt="Portfolio Website" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="https://github.com/avinashmenon151-art" target="_blank" rel="noopener" class="overlay-btn">View on GitHub ↗</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <span class="num">02</span>
+                    <h3>Portfolio Website</h3>
+                    <p>My personal portfolio built with HTML &amp; CSS, showcasing projects and contact details.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span>
+                    </div>
+                    <a href="https://github.com/avinashmenon151-art" target="_blank" rel="noopener" class="card-link">GitHub →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img">
+                    <img src="images/calc.png" alt="Calculator" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="https://github.com/avinashmenon151-art" target="_blank" rel="noopener" class="overlay-btn">View on GitHub ↗</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <span class="num">03</span>
+                    <h3>Calculator</h3>
+                    <p>A clean, fully functional web-based calculator for standard arithmetic operations.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <a href="https://github.com/avinashmenon151-art" target="_blank" rel="noopener" class="card-link">GitHub →</a>
+                </div>
+            </article>
+
         </div>
+    </section>
 
-        <!-- Portfolio -->
-        <div class="project">
-            <img src="images/example.png" alt="Portfolio">
-            <h3>Portfolio Website</h3>
-            <p>
-                A responsive personal portfolio website showcasing projects,
-                skills, and contact details using HTML and CSS.
-            </p>
-            <a href="https://github.com/avinashmenon-151art
-            " target="_blank">View Code</a>
+    <footer>
+        <div class="social-row">
+            <a href="https://github.com/avinashmenon151-art" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/avinash-menon-6976b7378/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/avinash15" target="_blank" rel="noopener">Instagram</a>
         </div>
-
-        <!-- Calculator -->
-        <div class="project">
-            <img src="images/calc.png" alt="Calculator">
-            <h3>Calculator</h3>
-            <p>
-                A simple calculator application that performs basic arithmetic
-                operations with a clean interface.
-            </p>
-            <a href="https://github.com/avinashmenon-151art
-            " target="_blank">View Code</a>
+        <div class="footer-bottom">
+            <span class="logo">AM<span class="accent">.</span></span>
+            <span class="copy">© 2026 Avinash Menon</span>
         </div>
-
-    </div>
-</section>
-
-<!-- Footer -->
-<footer>
-    <p>
-        <a href="index.html">Back to Home</a>
-    </p>
-</footer>
+    </footer>
 
 </body>
 </html>
