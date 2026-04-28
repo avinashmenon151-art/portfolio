@@ -3,87 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avinash Portfolio</title>
+    <title>Avinash Menon | Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav>
-    <h2>Avinash</h2>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <nav>
+        <div class="logo">AM<span class="accent">.</span></div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- Hero Section -->
-<section id="home">
-    <h1>Hi, I'm Avinash 👋</h1>
-
-    <p class="typing">
-        I build simple, clean, and responsive websites.
-    </p>
-</section>
-
-<!-- About -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>I am a student interested in coding, web design, and problem solving.</p>
-</section>
-
-<!-- Projects -->
-<section>
-    <h2>My Projects</h2>
-
-    <div class="project-container">
-
-        <div class="project">
-            <img src="images/taskmanager.webp" alt="Task Manager">
-            <h3>Student Task Manager</h3>
-            <p>Manage tasks, deadlines, and study schedules easily.</p>
-            <a href="https://github.com/avinashmenon151-art" target="_blank">View Project</a>
+    <section class="hero">
+        <p class="eyebrow">Hello, World —</p>
+        <h1>I'm <span class="accent">Avinash</span><br>Menon</h1>
+        <p class="hero-sub">Aspiring developer building clean, responsive web experiences with HTML, CSS &amp; JavaScript.</p>
+        <div class="cta-row">
+            <a href="projects.html" class="btn-fill">View My Work</a>
+            <a href="#contact" class="btn-outline">Get In Touch</a>
         </div>
+    </section>
 
-        <div class="project">
-            <img src="images/example.png" alt="Portfolio">
-            <h3>Portfolio Website</h3>
-            <p>A responsive portfolio built using HTML & CSS.</p>
-            <a href="https://github.com/avinashmenon151-art" target="_blank">View Project</a>
+    <section class="about" id="about">
+        <div class="section-label">// About</div>
+        <div class="about-grid">
+            <div>
+                <h2>Turning ideas<br><em>into interfaces</em></h2>
+                <p>I'm a Computer Science student passionate about building things on the web — from pixel-perfect layouts to interactive experiences that feel good to use.</p>
+                <p>Currently exploring the full spectrum of modern web development, one project at a time.</p>
+            </div>
+            <div class="skills">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Java</span>
+                <span>OOP</span>
+                <span>Responsive Design</span>
+                <span>Git</span>
+                <span>Web Dev</span>
+            </div>
         </div>
+    </section>
 
-        <div class="project">
-            <img src="images/calc.png" alt="Calculator">
-            <h3>Calculator</h3>
-            <p>Performs arithmetic operations with a clean UI.</p>
-            <a href="https://github.com/avinashmenon151-art" target="_blank">View Project</a>
+    <section class="teaser">
+        <div class="section-label">// Work</div>
+        <div class="teaser-header">
+            <h2>Selected Projects</h2>
+            <a href="projects.html" class="btn-outline small">See All →</a>
         </div>
+        <div class="teaser-list">
+            <a href="projects.html" class="teaser-item">
+                <span class="num">01</span>
+                <span class="teaser-title">Student Task Manager</span>
+                <span class="arrow">↗</span>
+            </a>
+            <a href="projects.html" class="teaser-item">
+                <span class="num">02</span>
+                <span class="teaser-title">Portfolio Website</span>
+                <span class="arrow">↗</span>
+            </a>
+            <a href="projects.html" class="teaser-item">
+                <span class="num">03</span>
+                <span class="teaser-title">Web Calculator</span>
+                <span class="arrow">↗</span>
+            </a>
+        </div>
+    </section>
 
-    </div>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-    <h2>Contact Me</h2>
-
-    <p>Email: avinashmenon151@gmail.com</p>
-    <p>Phone: +91 73068 37090</p>
-
-    <p>
-        <a href="https://github.com/avinashmenon151-art" target="_blank">GitHub</a> |
-        <a href="https://www.linkedin.com/in/avinash-menon-6976b7378/" target="_blank">LinkedIn</a>
-    </p>
-</section>
-
-<!-- Footer -->
-<footer>
-    <p>© 2026 Avinash | 
-        <a href="#about">About</a> | 
-        <a href="#contact">Contact</a>
-    </p>
-</footer>
+    <footer id="contact">
+        <div class="section-label">// Contact</div>
+        <h2>Let's <em>connect</em></h2>
+        <p class="footer-sub">Open to opportunities, collaborations, or just a good conversation about tech.</p>
+        <div class="contact-links">
+            <a href="mailto:avinashmenon151@gmail.com" class="contact-row">
+                <span class="clabel">Email</span>
+                <span>avinashmenon151@gmail.com ↗</span>
+            </a>
+            <a href="tel:+917306837090" class="contact-row">
+                <span class="clabel">Phone</span>
+                <span>+91 73068 37090 ↗</span>
+            </a>
+        </div>
+        <div class="social-row">
+            <a href="https://github.com/avinashmenon151-art" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/avinash-menon-6976b7378/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/avinash15" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <div class="footer-bottom">
+            <span class="logo">AM<span class="accent">.</span></span>
+            <span class="copy">© 2026 Avinash Menon</span>
+        </div>
+    </footer>
 
 </body>
 </html>
